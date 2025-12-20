@@ -34,7 +34,7 @@ phases:
       - mvn clean package
       
       - echo Building Docker image...
-      - docker build -t app:$IMAGE_TAG app/
+      - docker build -t app:$IMAGE_TAG .
 
   post_build:
     commands:
