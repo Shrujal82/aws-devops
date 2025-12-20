@@ -1,4 +1,4 @@
-FROM eclipse-temurin:21-jdk-alpine
+FROM public.ecr.aws/amazoncorretto/amazoncorretto:21-alpine
 WORKDIR /app
 COPY target/*.jar app.jar
 EXPOSE 8080
