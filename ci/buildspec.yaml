@@ -10,8 +10,13 @@ env:
 
 phases:
   install:
+    runtime-versions:
+      java: corretto21
     commands:
       - echo Installing dependencies...
+      - echo "Using Java version:"
+      - java -version
+      - mvn -version
 
   pre_build:
     commands:
@@ -25,6 +30,9 @@ phases:
 
   build:
     commands:
+      - echo Running Maven build with Java 21...
+      - mvn clean test package
+      
       - echo Building Docker image...
       - docker build -t app:$IMAGE_TAG app/
 
