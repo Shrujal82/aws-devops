@@ -1,10 +1,10 @@
-package com.tcs.DevOps_project;
+package com.tcs.aws_devops;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DevOpsProjectApplicationTests {
+class AwsDevopsApplicationTests {
 
 	@Test
 	void contextLoads() {

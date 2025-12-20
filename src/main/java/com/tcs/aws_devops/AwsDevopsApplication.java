@@ -1,13 +1,13 @@
-package com.tcs.DevOps_project;
+package com.tcs.aws_devops;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DevOpsProjectApplication {
+public class AwsDevopsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DevOpsProjectApplication.class, args);
+		SpringApplication.run(AwsDevopsApplication.class, args);
 	}
 
 }
